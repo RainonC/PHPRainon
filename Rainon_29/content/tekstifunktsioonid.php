@@ -34,7 +34,16 @@ echo strpos($tekst, $otsitav, 0);
 echo '<br>';
 //näita kõik sõnad peale esimest
 echo substr($tekst, strpos($tekst, " ", 0), strlen($tekst) - strpos($tekst, " ", 0));
+?>
 
 //Mõistatus - загадка
 //Eesti linn.
 //5 подсказок при помощи текстовых функций
+<hr>
+<h2>Mõistatus.Eesti linn</h2>
+<?php
+$linn='Pärnu';
+echo "<ol><li>Linnanimi pikkus on ".strlen($linn). "tähte</li>";
+
+
+highlight_file('tekstifunktsioonid.php');
